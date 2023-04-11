@@ -1,6 +1,8 @@
 ---
-	import Navigation from '../components/Navigation.astro';
-	const title = "My Astro Learning Blog";
+	import Header from '../components/Header.astro'
+
+	import Footer from '../components/Footer.astro';
+const title = "My Astro Learning Blog";
 ---
 
 <html lang="en">
@@ -12,7 +14,7 @@
 		<title>{title}</title>
 	</head>
 	<body>
-		<Navigation />
+		<Header />
 		<h1>{title}</h1>
     <p>これはわたしがアストロについて学ぶ旅路をポストする場所です。</p>
     <ul>
@@ -25,5 +27,6 @@
         <li><a href="/posts/post-3">Post Three</a>
       </li>
     </ul>
+		<Footer />
 	</body>
 </html>
