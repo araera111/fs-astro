@@ -1,4 +1,7 @@
 ---
+	import '../styles/global.css';
+	import Navigation from '../components/Navigation.astro';
+	const title = "Yu Home Page"
 ---
 
 <html lang="en">
@@ -7,12 +10,10 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{title}</title>
 	</head>
 	<body>
-	<a href="/">HOME</a>
-	<a href="/about/">About</a>
-	<a href="/blog/">Blog</a>
-		<h1>Yu Astro</h1>
+	<Navigation />
+		<h1>{title}</h1>
 	</body>
 </html>

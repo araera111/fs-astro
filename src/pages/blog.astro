@@ -1,4 +1,6 @@
 ---
+	import Navigation from '../components/Navigation.astro';
+	const title = "My Astro Learning Blog";
 ---
 
 <html lang="en">
@@ -7,13 +9,11 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{title}</title>
 	</head>
 	<body>
-	<a href="/">HOME</a>
-	<a href="/about/">About</a>
-	<a href="/blog/">Blog</a>
-		<h1>My Astro Learning Blog</h1>
+		<Navigation />
+		<h1>{title}</h1>
     <p>これはわたしがアストロについて学ぶ旅路をポストする場所です。</p>
     <ul>
       <li>
